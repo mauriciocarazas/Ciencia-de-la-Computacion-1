@@ -26,13 +26,12 @@ int main()
 /*
 *************************************************************************
 INVERTIR EL ARREGLO
-    for ( int i = 0 ; i < 2; i++ ){
+    for (int i = 0 ; i<longitud/2 ; i++ ){
         int temp;
-        temp =arreglo [i];
-        arreglo [i] = arreglo [3 - i];
-        arreglo [3 - i] = temp;
+        temp = arreglo[i];
+        arreglo [i] = arreglo [longitud-i-1];
+        arreglo [longitud-i-1] = temp;
     }
-
     cout << "los valores cambiados son: " << endl;
     cout << "El valor 1 de la lista es:" << arreglo [0] << endl;
     cout << "El valor 2 de la lista es:" << arreglo [1] << endl;
