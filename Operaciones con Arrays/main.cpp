@@ -27,16 +27,22 @@ int invertir (int arreglo[], int longitud){
 }
 
 //ORDENAR LOS ELEMENTOS DEL ARRAY
-int ordenar (int array[], const int length){}
+int ordenar (int array[], const int length){
+    for(int i=0 ; i<length ; i++){
+        for(int x = i+1 ; x < length ; x++){
+            if ( array[i] > array[x]){
+                int temp = array[i];
+                array[i] = array[x];
+                array[x]= temp;
+            }
+        }
+    }
+}
 
 
-/*
-IMPORTAR UNA FUNCION PARA OBTENER EL TAMAÑO DE LA CADENA
-char arr [] = "hello"
-
-'h' 'e' 'l' 'l' 'o'
-
-*/
+*************************************************************************
+*************************************************************************
+*************************************************************************
 
 int main(){
 //INICIAR UN ARREGLO DE ENTEROS DE 'n' ELEMENTOS
@@ -59,19 +65,34 @@ int main(){
 
 
 /*
-cout << "La suma de los elementos del array es: " << sum(arya,n) << endl;
 
-cout << "El promedio de los elementos del array es: " << promedio(arya,n) << endl;
+***********************************************************************************************
 
-cout << "El array invertido es :" <<  endl;
+cout << "La SUMA de los elementos del array es: " << sum(arya,n) << endl;
+
+***********************************************************************************************
+
+cout << "El PROMEDIO de los elementos del array es: " << promedio(arya,n) << endl;
+
+***********************************************************************************************
+
+cout << "El array INVERTIDO es :" <<  endl;
 invertir (arya,n);
 for (int i=0; i < n ; i++ ){
         cout << "El valor del elemento: " << i+1 << " es = " << arya[i] << endl;
     }
+
+***********************************************************************************************
+
+
+cout << "El array ORDENADO es :" <<  endl;
+ordenar (arya,n);
+for (int i=0; i < n ; i++ ){
+        cout << "El valor del elemento: " << i+1 << " es = " << arya[i] << endl;
+    }
+
+************************************************************************************************
 */
-
-
-
 
     return 0;
 }
