@@ -85,11 +85,25 @@ int lectura (int n){
     else
         cout << "El numero es invalido";
         return 0;
-
+7. Escriba una función para el intercambio de dos números usando paso por referencia.
 
 }
 
+//7. Escriba una función para el intercambio de dos números usando paso por referencia.
 
+
+void changeNumbers(int &a , int &b);
+
+//8 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por  referencia.
+void changeNumbers(int *r , int *b);
+
+
+//9Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
+void insertionSort(int arreglo[] , int lenght);
+void createArreglo(int arreglo[], int lenght);
+void printArreglo(int arreglo[], int lenght);
+
+//10
 
 //************************************************************************************************************************************
 int main()
@@ -125,7 +139,7 @@ int main()
 
     cout << potencia (b,e);
 
-*/
+
 //5
     cout << "Dame un numero : " ;
     int n;
@@ -133,4 +147,174 @@ int main()
     lectura  (n);
 
     return 0;
+
+
+//6
+//char sum = '+',
+       minus = '-',
+       mult = '*',
+       divi = '/';
+  double numa , numb,resultado;
+  char opera;
+
+  cout << "Bienvenido !! " << endl;
+  cout << "Soy una calculadora basica y te ayudare a hacer algunas operaciones " << endl;
+  cout << "Ingresa 2 numeros seguidos de un operador" << endl;
+  cout << "*---------------------*" << endl;
+  cout << sum << "Adicion" << endl;
+  cout << minus << "Resta" << endl;
+  cout << mult << "Multiplicacion" << endl;
+  cout << divi << "Division" << endl;
+  cout << "*---------------------*" << endl;
+  cout << endl << endl;
+  cout << "Empezemos !! " << endl;
+  cout << "Ingresa el Primer Numero " << endl;
+  cin >> numa ;
+  cout << "Ingresa el Segundo Numero " << endl;
+  cin >> numb ;
+
+  bool cortador = true;
+  while (cortador)
+  {
+    cout << "Ingresa el operador";
+    cin >> opera;
+    if(opera=='+' || opera == '-' || opera == '*' || opera == '/')
+    {
+      cortador = false;
+    }
+    else
+    {
+      cout << endl << endl << "Ingresa un operador correcto" << endl;
+    }
+  }
+  if (opera == '+'){resultado = numa + numb;}
+  else if (opera == '-'){resultado = numa - numb;}
+  else if (opera == '*'){resultado = numa * numb;}
+  else if (opera == '/'){resultado = numa / numb;}
+
+  cout << "Los valores ingresados fueron " << endl;
+  cout << numa << "    " << numb <<endl <<  "El operador escogido fue " << opera << endl;
+  cout << "El resultado es " << endl;
+  cout << resultado << endl;
+  return 0;
+
+
+
+//7. Escriba una función para el intercambio de dos números usando paso por referencia.
+int number_a , number_b;
+  cout << "Intercambiaremos 2 numeros " << endl;
+  cout << "Ingresa el numero A" << endl;
+  cin >> number_a;
+  cout << "Ingresa el numero B" << endl;
+  cin >> number_b;
+
+  cout << "El valor de A es " << number_a << endl;
+  cout << "El valor de B es " << number_b << endl;
+
+  //uso de la funcion intercambio
+  changeNumbers(number_a, number_b);
+
+  cout << "El valor de A ahora es " << number_a << endl;
+  cout << "El valor de B ahora es " << number_b << endl;
+
+}
+
+//funcion intercambio
+void changeNumbers(int &a , int &b)
+{
+  int temporal = a;
+  a = b;
+  b = temporal;
+}
+
+
+//8 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por  referencia.
+
+//Declaracion e ingreso de datos para ambos numeros
+  int number_a , number_b;
+  cout << "Intercambiaremos 2 numeros " << endl;
+  cout << "Ingresa el numero A" << endl;
+  cin >> number_a;
+  cout << "Ingresa el numero B" << endl;
+  cin >> number_b;
+
+  cout << "El valor de A es " << number_a << endl;
+  cout << "El valor de B es " << number_b << endl;
+
+  //uso de la funcion intercambio con punteros
+  int *ptrA = &number_a;
+  int *ptrB = &number_b;
+  changeNumbers(ptrA, ptrB);
+
+  cout << "El valor de A ahora es " << number_a << endl;
+  cout << "El valor de B ahora es " << number_b << endl;
+
+}
+
+//funcion intercambio con punteros
+void changeNumbers(int *r, int *s)
+  {
+     int temp = *r;
+     *r = *s;
+     *s = temp;
+     return;
+
+
+//9Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
+cout << "Utilizando insertionSort"<< endl;
+  cout << "Cuantos elementos ingresaras a la lista: ";
+  int lenght; cin >> lenght;
+  cout << endl;
+  int arreglo[lenght];//declarando el arreglo
+  createArreglo(arreglo,lenght);//creando el arreglo
+  cout << endl;
+  printArreglo(arreglo,lenght);//imprimiendo el arreglo
+
+  insertionSort(arreglo,lenght);// llamando a insertionSort
+  printArreglo(arreglo,lenght);// imprimiendo el arreglo ordenando
+
+
+
+
+}
+
+void createArreglo( int arreglo[],int lenght)
+{
+  //Ingresar los valores de un arreglo pidiendo un lenght
+  for( int i = 0 ; i < lenght ; i++)
+  {
+    int askNumber; cin >> askNumber;
+    arreglo[i] = askNumber;
+  }
+
+
+}
+void insertionSort( int arreglo[], int lenght)
+{
+
+  for( int  i = 1 ; i < lenght ; i++)
+  {
+    int j = i;
+    while ( j > 0 && arreglo[j-1] > arreglo [j])
+    {
+      int temp = arreglo[j];
+      arreglo[j]=arreglo[j-1];
+      arreglo[j-1]=temp;
+      j--;
+    }
+  }
+
+}
+
+void printArreglo(int arreglo[],int lenght)
+{
+  //imprime los valores del arreglo
+  cout << "La lista es: ";
+  for(int x = 0 ; x < lenght ; x++)
+  {
+    cout << arreglo[x] << " " ;
+  }
+  cout << endl;
+
+
 }
