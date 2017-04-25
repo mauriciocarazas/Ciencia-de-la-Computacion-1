@@ -52,43 +52,43 @@ int potencia (int b, int e){
 //5 Escriba un programa que retorne el número ingresado en palabras. Por ejemplo si el usuario ingresa el número 1 el programa debe retornar “uno”, si el usuario ingresa el número 0 el programa retorna “cero”… el programa solo permite números del 0 al 9, caso contrario debe imprimir el mensaje “Número no permitido” y debe terminar cuando el usuario ingresa el número -1.
 
 int lectura (int n){
-    if (n==0)
-        cout << "El numero es : " <<  "cero" ;
-        return 0;
-    if (n==1)
-        cout << "El numero es : " <<  "uno" ;
-        return 0;
-    if (n==2)
-        cout << "El numero es : " <<  "dos" ;
-        return 0;
-    if (n==3)
-        cout << "El numero es : " <<  "tres" ;
-        return 0;
-    if (n==4)
-        cout << "El numero es : " <<  "cuatro" ;
-        return 0;
-    if (n==5)
-        cout << "El numero es : " <<  "cinco" ;
-        return 0;
-    if (n==6)
-        cout << "El numero es : " <<  "seis" ;
-        return 0;
-    if (n==7)
-        cout << "El numero es : " <<  "siete" ;
-        return 0;
-    if (n==8)
-        cout << "El numero es : " <<  "ocho" ;
-        return 0;
-    if (n==9)
-        cout << "El numero es : " <<  "nueve" ;
-        return 0;
+    if (n==0 or n==1 or n==2 or n==3 or n==4 or n==5 or n==6 or n==7 or n==8 or n==9){
+        if (n==0)
+            cout << "El numero es : " <<  "cero" ;
+            return 0;
+        if (n==1)
+            cout << "El numero es : " <<  "uno" ;
+            return 0;
+        if (n==2)
+            cout << "El numero es : " <<  "dos" ;
+            return 0;
+        if (n==3)
+            cout << "El numero es : " <<  "tres" ;
+            return 0;
+        if (n==4)
+            cout << "El numero es : " <<  "cuatro" ;
+            return 0;
+        if (n==5)
+            cout << "El numero es : " <<  "cinco" ;
+            return 0;
+        if (n==6)
+            cout << "El numero es : " <<  "seis" ;
+            return 0;
+        if (n==7)
+            cout << "El numero es : " <<  "siete" ;
+            return 0;
+        if (n==8)
+            cout << "El numero es : " <<  "ocho" ;
+            return 0;
+        if (n==9)
+            cout << "El numero es : " <<  "nueve" ;
+            return 0;
+    }
     else
         cout << "El numero es invalido";
         return 0;
-7. Escriba una función para el intercambio de dos números usando paso por referencia.
 
 }
-
 //7. Escriba una función para el intercambio de dos números usando paso por referencia.
 
 
@@ -106,9 +106,8 @@ void printArreglo(int arreglo[], int lenght);
 //10
 
 //************************************************************************************************************************************
-int main()
-{
-/*potencia (3,2)
+int main(){
+/*
 // 1
     float m;
     float k;
@@ -120,14 +119,14 @@ int main()
 //2
     convgra(0);
     cout << endl;
-
+*/
 //3
     cout << "Dame un numero para determinar si es par o impar: " ;
     int n;
     cin >> n;
     paridad(n);
 
-
+/*
 //4
     cout << "La Base" << endl ;
     int b;
@@ -150,7 +149,7 @@ int main()
 
 
 //6
-//char sum = '+',
+    char sum = '+',
        minus = '-',
        mult = '*',
        divi = '/';
@@ -197,7 +196,6 @@ int main()
   cout << "El resultado es " << endl;
   cout << resultado << endl;
   return 0;
-
 
 
 //7. Escriba una función para el intercambio de dos números usando paso por referencia.
@@ -260,7 +258,7 @@ void changeNumbers(int *r, int *s)
      return;
 
 
-//9Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
+//9 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
 cout << "Utilizando insertionSort"<< endl;
   cout << "Cuantos elementos ingresaras a la lista: ";
   int lenght; cin >> lenght;
@@ -316,5 +314,5 @@ void printArreglo(int arreglo[],int lenght)
   }
   cout << endl;
 
-
+*/
 }
