@@ -3,7 +3,7 @@
 using namespace std;
 
 
-// 1) Escriba una programa en C++ que convierta de millas a kilómetros. Su programa debe solicitar por teclado el ingreso de las millas.
+// 1) Escriba una programa en C++ que convierta de millas a kilï¿½metros. Su programa debe solicitar por teclado el ingreso de las millas.
 
 int converdist(int m , int k ){
     k = m/6*10;
@@ -20,7 +20,7 @@ int convgra(int x){
     return 0;
 }
 
-//3)Escriba un programa en C++ que verifique si el número ingresado es par o impar. El programa debe solicitar el número por teclado y solamente debe detenerse cuando el usuario ingresa -1
+//3)Escriba un programa en C++ que verifique si el nï¿½mero ingresado es par o impar. El programa debe solicitar el nï¿½mero por teclado y solamente debe detenerse cuando el usuario ingresa -1
 
 int paridad(int n){
     if (n==-1)
@@ -33,7 +33,7 @@ int paridad(int n){
     }
 }
 
-//4)Escriba una función para calcular la potencia de dos números, dicha función debe recibir dos argumentos, la base y el exponente y debe retornar el resultado
+//4)Escriba una funciï¿½n para calcular la potencia de dos nï¿½meros, dicha funciï¿½n debe recibir dos argumentos, la base y el exponente y debe retornar el resultado
 
 int potencia (int b, int e){
     if (e==0)
@@ -49,7 +49,7 @@ int potencia (int b, int e){
     }
 }
 
-//5 Escriba un programa que retorne el número ingresado en palabras. Por ejemplo si el usuario ingresa el número 1 el programa debe retornar “uno”, si el usuario ingresa el número 0 el programa retorna “cero”… el programa solo permite números del 0 al 9, caso contrario debe imprimir el mensaje “Número no permitido” y debe terminar cuando el usuario ingresa el número -1.
+//5 Escriba un programa que retorne el nï¿½mero ingresado en palabras. Por ejemplo si el usuario ingresa el nï¿½mero 1 el programa debe retornar ï¿½unoï¿½, si el usuario ingresa el nï¿½mero 0 el programa retorna ï¿½ceroï¿½ï¿½ el programa solo permite nï¿½meros del 0 al 9, caso contrario debe imprimir el mensaje ï¿½Nï¿½mero no permitidoï¿½ y debe terminar cuando el usuario ingresa el nï¿½mero -1.
 
 int lectura (int n){
     if (n==0 or n==1 or n==2 or n==3 or n==4 or n==5 or n==6 or n==7 or n==8 or n==9){
@@ -89,16 +89,16 @@ int lectura (int n){
         return 0;
 
 }
-//7. Escriba una función para el intercambio de dos números usando paso por referencia.
+//7. Escriba una funciï¿½n para el intercambio de dos nï¿½meros usando paso por referencia.
 
 
 void changeNumbers(int &a , int &b);
 
-//8 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por  referencia.
+//8 Reescriba la funciï¿½n de intercambio de dos nï¿½meros, utilice punteros en lugar de paso por  referencia.
 void changeNumbers(int *r , int *b);
 
 
-//9Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
+//9Reescriba la funciï¿½n de intercambio de dos nï¿½meros, utilice punteros en lugar de paso por referencia.
 void insertionSort(int arreglo[] , int lenght);
 void createArreglo(int arreglo[], int lenght);
 void printArreglo(int arreglo[], int lenght);
@@ -107,7 +107,7 @@ void printArreglo(int arreglo[], int lenght);
 
 //************************************************************************************************************************************
 int main(){
-/*
+/
 // 1
     float m;
     float k;
@@ -116,17 +116,18 @@ int main(){
     converdist(m,k);
     cout << endl;
 
+/*
 //2
     convgra(0);
     cout << endl;
-*/
+
 //3
     cout << "Dame un numero para determinar si es par o impar: " ;
     int n;
     cin >> n;
     paridad(n);
 
-/*
+
 //4
     cout << "La Base" << endl ;
     int b;
@@ -198,7 +199,7 @@ int main(){
   return 0;
 
 
-//7. Escriba una función para el intercambio de dos números usando paso por referencia.
+//7. Escriba una funciï¿½n para el intercambio de dos nï¿½meros usando paso por referencia.
 int number_a , number_b;
   cout << "Intercambiaremos 2 numeros " << endl;
   cout << "Ingresa el numero A" << endl;
@@ -226,7 +227,7 @@ void changeNumbers(int &a , int &b)
 }
 
 
-//8 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por  referencia.
+//8 Reescriba la funciï¿½n de intercambio de dos nï¿½meros, utilice punteros en lugar de paso por  referencia.
 
 //Declaracion e ingreso de datos para ambos numeros
   int number_a , number_b;
@@ -258,7 +259,7 @@ void changeNumbers(int *r, int *s)
      return;
 
 
-//9 Reescriba la función de intercambio de dos números, utilice punteros en lugar de paso por referencia.
+//9 Reescriba la funciï¿½n de intercambio de dos nï¿½meros, utilice punteros en lugar de paso por referencia.
 cout << "Utilizando insertionSort"<< endl;
   cout << "Cuantos elementos ingresaras a la lista: ";
   int lenght; cin >> lenght;

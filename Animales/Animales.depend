@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1495554147 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\main.cpp
+	<iostream>
+	<string>
+	"felino.h"
+	"canino.h"
+	"Mamiferos.h"
+
+1495554121 c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\include\felino.h
+	<string>
+	"Mamiferos.h"
+	<iostream>
+
+1495554121 c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\include\mamiferos.h
+	<string>
+	<iostream>
+
+1495554121 c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\include\canino.h
+	"Mamiferos.h"
+	<string>
+	<iostream>
+
+1495554030 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\src\canino.cpp
+	"canino.h"
+	<string>
+
+1495553493 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\animales\src\felino.cpp
+	"felino.h"
+	<string>
+

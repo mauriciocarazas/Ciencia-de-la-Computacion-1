@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1495816301 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\main.cpp
+	<iostream>
+	"persona.h"
+	<string>
+
+1495817177 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\persona.h
+	<iostream>
+	<string.h>
+

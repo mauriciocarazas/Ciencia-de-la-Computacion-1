@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1495210417 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases, herencias, constructores\main.cpp
+	<iostream>
+	"car.h"
+
+1495210579 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases, herencias, constructores\include\car.h
+	<iostream>
+	<string>
+
+1495210593 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases, herencias, constructores\src\car.cpp
+	"car.h"
+
