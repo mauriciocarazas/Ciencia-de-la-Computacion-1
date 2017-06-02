@@ -10,8 +10,9 @@ private:
 
 public:
 	Conserje(string, int,Birthday, string, int);
-	const string mostrarDatos();
-	const int  mostrarllaves();
+	virtual const string mostrarDatos();
+	virtual const int  mostrarllaves();
 	const string mostraredificio();
 
 };
+#endif

@@ -12,8 +12,8 @@ protected:
 public:
 	Persona(string, int,Birthday);
 	Persona();
-	virtual const string mostrarDatos();
-	virtual const string mostrarNombre();
+	virtual const string mostrarDatos()=0;
+	virtual const string mostrarNombre()=0;
 	const int mostrardni();
 
 

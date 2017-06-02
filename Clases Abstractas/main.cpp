@@ -9,7 +9,7 @@ int main() {
 	Birthday c1(12, 12, 1999);
 	Birthday c2(11, 6, 2015);
 	Birthday c3(10, 2, 1990);
-	Persona p1("luis ",71213933, c1);
+	//Persona p1("luis ",71213933, c1);
 	Gerente g1("mateo ", 711232124,c2,"Licenciado", 78123);
 	Conserje d1("marcos ", 87465462,c3,"UCSP", 100);
 	/*Persona *arr = new Persona[3];

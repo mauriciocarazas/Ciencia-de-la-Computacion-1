@@ -11,9 +11,10 @@ private:
 
 public:
 	Gerente(string, int,Birthday,string,int);
-	const string mostrarDatos();
+	virtual const string mostrarDatos();
 	const string mostrarArea();
 	const int mostrarCodigo();
 
 
 };
+#endif
