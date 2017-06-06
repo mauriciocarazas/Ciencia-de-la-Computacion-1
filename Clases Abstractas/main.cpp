@@ -3,8 +3,9 @@
 #include "Gerente.h"
 #include "Conserge.h"
 #include "Birthday.h"
-using namespace std;
 #include<string>
+using namespace std;
+
 int main() {
 	Birthday c1(12, 12, 1999);
 	Birthday c2(11, 6, 2015);

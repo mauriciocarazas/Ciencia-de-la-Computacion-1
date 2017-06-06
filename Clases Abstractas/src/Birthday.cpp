@@ -8,17 +8,18 @@ Birthday::Birthday(int _dia,int _mes,int _anio){
 Birthday::Birthday(){
     dia=0;
     mes=0;
-    anio=0;
+    year=0;
 }
-const int Birthday()::mostrardia(){
+const int Birthday::mostrardia(){
     return dia;
 }
 
-const int Birthday()::mostrarmes();
+const int Birthday::mostrarmes(){
     return mes;
-
-const int Birthday()::mostraryear();
+}
+const int Birthday::mostraryear(){
     return year;
-
-const int Birthday()::mostrarEdad();
-    return << 2017-year;
+}
+const int Birthday::mostrarEdad(){
+    return  2017-year;
+}

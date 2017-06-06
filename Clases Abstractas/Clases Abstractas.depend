@@ -1,10 +1,27 @@
 # depslib dependency file v1.0
-1495816301 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\main.cpp
+1496420553 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\main.cpp
 	<iostream>
 	"persona.h"
+	"Gerente.h"
+	"Conserge.h"
+	"Birthday.h"
 	<string>
 
-1495817177 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\persona.h
+1496420439 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\persona.h
 	<iostream>
-	<string.h>
+	<string>
+	"Birthday.h"
+
+1496420583 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\birthday.h
+
+1496420495 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\gerente.h
+	"Persona.h"
+	<string>
+
+1496420066 c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\include\conserge.h
+	"Persona.h"
+	<string>
+
+1496419255 source:c:\users\tony\documents\github\ciencia-de-la-computacion-1\clases abstractas\src\birthday.cpp
+	"Birthday.h"
 

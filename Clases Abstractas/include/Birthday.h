@@ -1,7 +1,5 @@
 #ifndef BIRTHDAY_H
 #define BIRTHDAY_H
-#include <string.h>
-using namespace std;
 
 class Birthday {
 protected:

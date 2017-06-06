@@ -1,7 +1,7 @@
 #ifndef PERSONA_H
 #define PERSONA_H
 #include <iostream>
-#include <string.h>
+#include <string>
 #include "Birthday.h"
 using namespace std;
 class Persona {

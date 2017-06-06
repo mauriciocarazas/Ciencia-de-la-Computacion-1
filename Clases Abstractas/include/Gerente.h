@@ -1,7 +1,7 @@
 #ifndef GERENTE_H
 #define GERENTE_H
 #include "Persona.h"
-#include <string.h>
+#include <string>
 using namespace std;
 
 class Gerente :public Persona {
@@ -11,7 +11,8 @@ private:
 
 public:
 	Gerente(string, int,Birthday,string,int);
-	virtual const string mostrarDatos();
+	const string mostrarDatos();
+	const string mostrarNombre();
 	const string mostrarArea();
 	const int mostrarCodigo();
 

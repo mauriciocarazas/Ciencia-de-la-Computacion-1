@@ -1,11 +1,13 @@
 #include "Conserge.h"
+#include <string>
+using namespace std;
 
+Conserje::Conserje(string nombre, int dni,Birthday cumple, string _edificio, int _llaves) :Persona(nombre, dni,cumple), edificio(_edificio), llaves(_llaves) {}
 
-Conserje::Conserje(string nombre, int dni,Cumple cumple, string _edificio, int _llaves) :Persona(nombre, dni,cumple), edificio(_edificio), llaves(_llaves) {}
-virtual const string Conserje::mostrarDatos() {
-	return "El conserje " + nombre + " del edificio de " + edificio + " con numero de llaves :"+to_string(llaves) + " su numero de dni es :" + to_string(dni)+ " con la edad de :"+ to_string(cumple.mostrarEdad());
+const string Conserje::mostrarDatos() {
+	return "El conserje " + nombre + " del edificio de " + edificio + " con numero de llaves :"+ to_string(llaves) + " su numero de dni es :" + to_string (dni)+ " con la edad de :"+ (cumple.mostrarEdad());
 }
-virtual const string conserge::mostrarNombre(){
+const string Conserje::mostrarNombre(){
     return nombre;
 
 }
