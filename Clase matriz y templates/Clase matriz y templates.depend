@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1511488137 source:c:\users\tony\downloads\pacman 2.0\clase matriz y templates\main.cpp
+	<iostream>
+	"matriz.h"
+
+1511488127 c:\users\tony\downloads\pacman 2.0\clase matriz y templates\include\matriz.h
+	<iostream>
+	<time.h>
+	<stdlib.h>
+
+1511488146 source:c:\users\tony\downloads\pacman 2.0\clase matriz y templates\src\matriz.cpp
+	"matriz.h"
+
